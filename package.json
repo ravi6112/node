@@ -1,0 +1,17 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravishasthri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "yargs": "^5.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
