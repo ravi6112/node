@@ -9,6 +9,13 @@ it("should add two numbers" , ()=>{
     expect(res).toBe(90);
 
 });
+it("should check async",(done)=>{
+    utils.asyncSqr(5,(sqr)=>{
+       expect(sqr).toBe(25);
+       done();
+    });
+
+});
 
 it("should square number" , ()=>{
     var res = utils.square(25);
@@ -32,13 +39,13 @@ it("should square number" , ()=>{
 //     })
 // });
 
-it ("should check the firstName and LastName", ()=>{
-    var user = {location : 'Pussellawa', age: 25};
-    var res = utils.setName(user, 'Ravishasthri Selladurai');
-
-    // expect(user).toEqual(res);
-    expect(res).toInclude({
-        firstName : "Ravishasthri",
-        lastName : "Selladurai"
-    });
-});
+// it ("should check the firstName and LastName", ()=>{
+//     var user = {location : 'Pussellawa', age: 25};
+//     var res = utils.setName(user, 'Ravishasthri Selladurai');
+//
+//     // expect(user).toEqual(res);
+//     expect(res).toInclude({
+//         firstName : "Ravishasthri",
+//         lastName : "Selladurai"
+//     });
+// });
