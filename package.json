@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "mocha **/*.test.js",
+    "start": "node server/server.js"
+    "test": "mocha server/**/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"",
     "start": "node server.js"
+  },
+  "engines":{
+    "node" : "8.4.0"
   },
   "author": "Ravishasthri",
   "license": "ISC",
